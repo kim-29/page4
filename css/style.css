@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+  --bsw:box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+  --tsw:text-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+
+*{
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+
+html{font-size: 62.5%;scroll-behavior: smooth;}
+body{overflow-x: hidden;}
+a{text-decoration: none;}
+.heading{font-size: 4rem;text-align: center;letter-spacing: 1.7rem;color: #444;margin: 2rem 0;padding-top: 6rem;text-decoration: underline;text-decoration-color: orange;text-underline-offset:-1.4rem;}
+/*header section starts*/
+.header{display: flex;align-items: center;justify-content: space-between;width: 100%;background: #fff;padding: 1rem 2rem;box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);position: fixed;top: 0;left: 0;z-index: 100;}
+.header .logo{font-size: 3rem;color: orange;font-weight: bold;}
+.header nav ul{list-style: none;display: flex;align-items: center;justify-content: space-around;margin: 0;padding: 0;}
+.header nav ul li{margin: 0 1.5rem;}
+.header nav ul li a{font-size: 2rem;color: #666;}
+.header nav ul li a:hover{color: orange;}
+.header .menu{font-size: 2rem;cursor: pointer;color: #666;display: none;}
+/*header section ends*/
+
+
+/*home section starts*/
+.home .hero{
+  height: 60vh;
+  background: url(../img/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.home .hero .text1{font-size: 5rem;width: 45rem;background: #fff;padding: 1rem 2rem;text-align: center;opacity: .8;}
+.home .hero .text2{font-size: 3rem;width: 35rem;background: orange;padding: 1rem 2rem;text-align: center;opacity: .8;}
+.home .counting{min-height: 40vh;padding: 2rem 0;display: flex;align-items: center;justify-content: center;flex-wrap: wrap}
+.home .counting .box{margin: 2rem 4rem;text-align: center;}
+.home .counting .box .count{font-size: 7rem;color: #444;}
+.home .counting .box h3{font-size: 2rem;color: orange;}
+.home .counting .box{}
+.home .counting{}
+.home .counting{}
+/*home section ends*/
+
+
+/*about section starts*/
+.about{min-height: 100vh;padding-bottom: 3rem;}
+.about .image{padding: 2rem;}
+.about .image img{height: 45rem;object-fit: cover;box-shadow: 2.5rem 2.5rem 0 1rem orange}
+.about .info{padding: 2rem;margin-top: 3rem;}
+.about .info h2{color: orange;font-size: 3rem;}
+.about .info p{font-size: 2rem;color: #444;margin: 2rem 0;}
+.about .info .icons a{font-size: 2rem;height: 4rem;width: 4rem;line-height: 4rem;text-align: center;background: #333;color: #fff;border-radius: .5rem;margin-right: 1rem;text-decoration: none;}
+.about .info .icons a:hover{background: orange;}
+/*about section ends*/
+
+
+/*service section starts*/
+.service{min-height: 100vh;}
+.service .box-container{width: 90%;display: flex;justify-content: center;flex-wrap: wrap}
+.service .box-container .box{height: 25rem;width: 25rem;box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);border-left: .5rem solid orange;border-right: .5rem solid orange;border-radius: .5rem;text-align: center;padding-top: 6rem;margin: 2rem 3rem;}
+.service .box-container .box .fas{color: orange;font-size: 5rem;}
+.service .box-container .box p{font-size: 1.5rem;color: #333;margin: 2rem 0;}
+/*service section ends*/
+
+
+/*project section starts*/
+.project{min-height: 100vh;background: #333;}
+.project .heading{color: #fff;}
+.project .box-container{display: flex;justify-content: center;flex-wrap: wrap}
+.project .box-container .box{height: 20rem;width: 30rem;margin: 2rem;border-radius: .5rem;box-shadow: 0 .2rem .5rem #000;overflow: hidden;}
+.project .box-container .box img{height: 100%;width: 100%;object-fit: cover;}
+.project .box-container .box:hover img{transform: scale(1.4)}
+/*project section ends*/
+
+
+/*contact section starts*/
+.contact{min-height: 100vh;}
+.contact .box-container{display: flex;align-items: center;justify-content: center;flex-wrap: wrap}
+.contact .box-container .contact-box{height: 15rem;flex: 1 0 30rem;margin: 2rem;box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);border-radius: .5rem;text-align: center;padding-top: 4rem;}
+.contact .box-container .contact-box i{color: orange;font-size: 4rem;}
+.contact .box-container .contact-box h3{font-size: 2rem;color: #444;}
+.contact .form-container{width: 90%;text-align: center;}
+.contact .form-container form input, textarea{height: 4.5rem;padding: 0 1rem;margin: 2rem 0;font-size: 1.5rem;box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);border: none;outline: none;color: #333;}
+.contact .form-container form .inputbox{display: flex;justify-content: space-between}
+.contact .form-container form input[type="text"]{width: 49%;}
+.contact .form-container form input[type="email"]{width: 100%;}
+.contact .form-container form textarea{width: 100%;height: 20rem;padding: 1rem;resize: none;overflow-y: auto;}
+.contact .form-container form input[type="submit"]{background-color: orange;width: 15rem;color: #fff;font-size: 2rem;}
+.contact .form-container form input[type="submit"]:hover{letter-spacing: .2rem}
+.contact .form-container form {}
+.contact .form-container{}
+/*contact section ends*/
+
+
+/*footer section starts*/
+.footer{text-align: center;background: #444;color: #fff;padding: 2rem 0;}
+.footer .list{display: flex;flex-flow: column;}
+.footer .list a{font-size: 1.5rem;color: orange;}
+.footer .list a:hover{color: #fff;}
+.footer .credit{margin-top: 2rem;}
+.footer .credit span{color: orange;}
+/*footer section ends*/
+/*media query*/
+@media (max-width: 768px) {
+  html{font-size: 50%;}
+  .header .menu{display: block;}
+  .header nav{position: fixed;top: 7rem;right: -40rem;height: calc(100vh - 6rem);}
+  .header nav ul{background: #fff;height: 100%;width: 33rem;flex-flow: column}
+  .header nav ul li{margin: 1rem 0;}
+  .header nav ul li a{display: block;width: 25rem;border: .1rem solid rgba(0,0,0,.3);border-radius: 5rem;padding: .5rem 0;text-align: center;}
+  .header nav ul li a:hover{background: #444;}
+  .header .menu .fa-times{transform: rotate(180deg);}
+  .header nav.active{right: 0rem;}
+}
+@media (max-width: 400px) {
+  .home .hero .text1{font-size: 3.5rem;width: 35rem;}
+  .home .hero .text2{font-size: 2.5rem;width: 35rem;}
+}
